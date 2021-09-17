@@ -1,0 +1,58 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+main{
+    height: 100vh;
+    background-color: rgb(124, 237, 160);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner
+{
+    width: 18rem;
+    height: 19rem;
+    background-color: white;
+    border-radius: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.num{
+    font-size: 100px;
+    font-weight: bold;
+    margin-bottom: 30px;
+
+}
+
+.btn{
+    margin-top: 30px;
+}
+
+.btn Button
+{
+margin-left: 20px;    
+background-color: white;
+}
+.btn Button:active
+{  
+background-color: white;
+}
+.btn Button:hover
+{  
+background-color: white;
+}
+
+.btn Button:nth-child(1)
+{
+color: green;
+}
+.btn Button:nth-child(2)
+{
+color: red;
+}
