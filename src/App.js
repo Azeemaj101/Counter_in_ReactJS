@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React,{useEffect, useState} from 'react';
 import './App.css';
 import Button from '@mui/material/Button';
 import ControlPointIcon from '@mui/icons-material/ControlPoint';
@@ -8,6 +8,9 @@ import Tooltip from '@mui/material/Tooltip';
 
 function App() {
   let [count,setCount] = useState(0);
+  useEffect(()=>{
+    document.title = `You click me ${count}`;
+  },[count])
   let Fun = (e) =>{
     console.log(e.target.id)
     if(e.target.id === "1" ||e.target.id === "11")
